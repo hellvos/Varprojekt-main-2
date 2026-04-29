@@ -19,6 +19,7 @@ public class BulletController : MonoBehaviour
    void OnTriggerEnter(Collider collision)
     {
         print("test");
+        
         if (!collision.CompareTag("Ground"))
         {
             Destroy(collision.gameObject);
